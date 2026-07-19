@@ -460,7 +460,7 @@
         "social_links_Ew63Kq": {
           "type": "social-links",
           "settings": {
-            "icon_color": "",
+            "icon_color": "#000000",
             "facebook_url": "https://www.facebook.com/",
             "instagram_url": "https://www.instainstagram.com/",
             "youtube_url": "https://www.youtube.comyou/",
