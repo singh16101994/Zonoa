@@ -461,8 +461,8 @@
           "type": "social-links",
           "settings": {
             "icon_color": "#000000",
-            "facebook_url": "https://www.facebook.com/",
-            "instagram_url": "https://www.instainstagram.com/",
+            "facebook_url": "https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F",
+            "instagram_url": "https://www.instagram.com/?hl=en",
             "youtube_url": "https://www.youtube.comyou/",
             "tiktok_url": "https://www.tiktok.com/",
             "twitter_url": "https://x.com/",
