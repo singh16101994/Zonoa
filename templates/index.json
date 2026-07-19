@@ -162,7 +162,7 @@
                 "video_position": "cover",
                 "background_image_position": "cover",
                 "toggle_overlay": false,
-                "overlay_color": "#1C456945",
+                "overlay_color": "#1c456945",
                 "overlay_style": "solid",
                 "gradient_direction": "to top",
                 "border": "none",
@@ -194,7 +194,7 @@
                     "letter_spacing": "normal",
                     "case": "none",
                     "wrap": "pretty",
-                    "text_color": "#FFFFFF",
+                    "text_color": "#ffffff",
                     "background": false,
                     "background_color": "#00000026",
                     "corner_radius": 0,
@@ -220,7 +220,7 @@
                     "letter_spacing": "normal",
                     "case": "none",
                     "wrap": "pretty",
-                    "text_color": "#FFFFFF",
+                    "text_color": "#ffffff",
                     "background": false,
                     "background_color": "#00000026",
                     "corner_radius": 0,
@@ -242,7 +242,7 @@
                     "custom_button_background": "{{ settings.color_palette.foreground }}",
                     "custom_button_text": "{{ settings.color_palette.background }}",
                     "custom_button_border": "{{ settings.color_palette.background }}",
-                    "link_text_color": "#FFFFFF",
+                    "link_text_color": "#ffffff",
                     "width": "fit-content",
                     "custom_width": 100,
                     "width_mobile": "fit-content",
@@ -369,7 +369,7 @@
                 "letter_spacing": "normal",
                 "case": "none",
                 "wrap": "pretty",
-                "text_color": "#FFFFFF",
+                "text_color": "#ffffff",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
@@ -472,7 +472,7 @@
                 "letter_spacing": "normal",
                 "case": "none",
                 "wrap": "pretty",
-                "text_color": "#FFFFFF",
+                "text_color": "#ffffff",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
@@ -560,7 +560,7 @@
             "letter_spacing": "normal",
             "case": "none",
             "wrap": "pretty",
-            "text_color": "#FFFFFF",
+            "text_color": "#ffffff",
             "background": false,
             "background_color": "#00000026",
             "corner_radius": 0,
@@ -576,7 +576,7 @@
           "settings": {
             "inverse": false,
             "font": "heading",
-            "text_color": "#FFFFFF",
+            "text_color": "#ffffff",
             "unit": "percent",
             "percent_width": 100,
             "pixel_height": 48,
@@ -596,6 +596,7 @@
         "text_jBRweM",
         "logo_dkHkdd"
       ],
+      "disabled": true,
       "name": "t:names.large_logo",
       "settings": {
         "content_direction": "column",
@@ -626,12 +627,28 @@
         "padding-block-start": 40,
         "padding-block-end": 40
       }
+    },
+    "animated_text_BaegGb": {
+      "type": "animated-text",
+      "name": "Animated Text",
+      "settings": {
+        "heading": "thezonoa",
+        "bg_image": "shopify://shop_images/immo-wegmann-a4k6Rlc8rtQ-unsplash.jpg",
+        "bg_color": "#1a1915",
+        "overlay_opacity": 45,
+        "text_color": "#ffffff",
+        "glow_color": "#6ef7ff",
+        "font_size": 110,
+        "border_radius": 60,
+        "animation_speed": 4
+      }
     }
   },
   "order": [
     "hero_jVaWmY",
     "hero_kAF8YK",
     "section_TVtaC8",
-    "section_RRybC8"
+    "section_RRybC8",
+    "animated_text_BaegGb"
   ]
 }
