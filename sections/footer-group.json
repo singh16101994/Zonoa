@@ -27,7 +27,7 @@
             "vertical_alignment_flex_direction_column": "flex-start",
             "gap": 15,
             "width": "custom",
-            "custom_width": 30,
+            "custom_width": 20,
             "width_mobile": "fill",
             "custom_width_mobile": 100,
             "height": "fit",
@@ -110,7 +110,7 @@
               "type": "social-links",
               "name": "t:names.social_media_links",
               "settings": {
-                "icon_color": "",
+                "icon_color": "#000000",
                 "facebook_url": "https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F",
                 "instagram_url": "https://www.instagram.com/?hl=en",
                 "youtube_url": "https://www.youtube.com/",
