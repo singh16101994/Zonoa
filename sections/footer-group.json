@@ -174,51 +174,20 @@
             "padding-inline-end": 0
           },
           "blocks": {
-            "text_fRbird": {
-              "type": "text",
-              "name": "t:names.heading",
+            "menu_8grDJd": {
+              "type": "menu",
+              "name": "t:names.menu",
               "settings": {
-                "text": "<h2>Company</h2>",
-                "width": "100%",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "h4",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
+                "menu": "main-menu",
+                "heading": "Company",
+                "menu_spacing": 12,
+                "show_as_accordion": false,
+                "accordion_icon": "caret",
+                "accordion_dividers": false,
+                "background_color": "",
                 "text_color": "",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "text_tGWE8i": {
-              "type": "text",
-              "name": "t:names.description",
-              "settings": {
-                "text": "<p>We obsess over the details and strive to deliver the best products at the best prices, every time.</p>",
-                "width": "100%",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "rte",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "text_color": "",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
+                "heading_preset": "h3",
+                "link_preset": "paragraph",
                 "padding-block-start": 0,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
@@ -228,8 +197,7 @@
             }
           },
           "block_order": [
-            "text_fRbird",
-            "text_tGWE8i"
+            "menu_8grDJd"
           ]
         },
         "group_CcQntV": {
@@ -272,51 +240,20 @@
             "padding-inline-end": 0
           },
           "blocks": {
-            "text_LVq6TE": {
-              "type": "text",
-              "name": "t:names.heading",
+            "menu_JfG37Q": {
+              "type": "menu",
+              "name": "t:names.menu",
               "settings": {
-                "text": "<h2>Quick links</h2>",
-                "width": "100%",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "h4",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
+                "menu": "main-menu",
+                "heading": "Quick Links",
+                "menu_spacing": 12,
+                "show_as_accordion": false,
+                "accordion_icon": "caret",
+                "accordion_dividers": false,
+                "background_color": "",
                 "text_color": "",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "text_rDg6d9": {
-              "type": "text",
-              "name": "t:names.description",
-              "settings": {
-                "text": "<p>We're always on your side: keeping our loyal customers happy is our top priority and number one goal.</p>",
-                "width": "100%",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "rte",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "text_color": "",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
+                "heading_preset": "h3",
+                "link_preset": "paragraph",
                 "padding-block-start": 0,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
@@ -326,8 +263,7 @@
             }
           },
           "block_order": [
-            "text_LVq6TE",
-            "text_rDg6d9"
+            "menu_JfG37Q"
           ]
         }
       },
