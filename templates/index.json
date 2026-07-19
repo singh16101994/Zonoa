@@ -16,7 +16,7 @@
           "type": "text",
           "name": "t:names.heading",
           "settings": {
-            "text": "<p> Zonoa </p>",
+            "text": "<p>Monsoon  Sale</p>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
@@ -67,6 +67,7 @@
         "media_type_1": "image",
         "image_1": "shopify://shop_images/download.jpg",
         "media_type_2": "image",
+        "image_2": "shopify://shop_images/MNSN_website_26.jpg2_NEW.webp",
         "stack_media_on_mobile": false,
         "custom_mobile_media": false,
         "media_type_1_mobile": "image",
