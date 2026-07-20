@@ -3,7 +3,7 @@
 {% liquid
   assign order = 'logo,menu,localization,search,drawer_search,actions'
 
-  if shop.customer_accounts_enabled
+  if shop.customer_accounts_enabled 
     assign order = 'drawer_search,logo,menu,localization,search,actions'
   endif
 
@@ -557,7 +557,7 @@
       --color-primary-button-text: var(--color-transparent-text-contrast);
     }
 
-    /* Swap the cart bubble in transparent state only when using the default
+    /* Swap the cart123 bubble in transparent state only when using the default
        style. Custom bubble colors apply unchanged across header states. */
     &[data-bubble-style='default']:not([data-sticky-state='active']):not(
         :has(.menu-list__link:is(:hover, [aria-expanded='true']))

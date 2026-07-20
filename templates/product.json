@@ -6,7 +6,8 @@
  * or related systems. Please exercise caution as any changes
  * made to this file may be overwritten.
  * ------------------------------------------------------------
- */{
+ */
+{
   "sections": {
     "main": {
       "type": "product-information",
@@ -34,21 +35,22 @@
           "type": "_product-media-gallery",
           "static": true,
           "settings": {
-            "media_presentation": "grid",
+            "media_presentation": "carousel",
             "media_columns": "two",
             "image_gap": 4,
             "large_first_image": false,
-            "slideshow_controls_style": "counter",
+            "icons_style": "arrow",
+            "slideshow_controls_style": "thumbnails",
             "slideshow_mobile_controls_style": "dots",
-            "thumbnail_position": "right",
+            "thumbnail_position": "bottom",
             "thumbnail_width": 44,
             "thumbnail_radius": 0,
             "aspect_ratio": "adapt",
             "constrain_to_viewport": true,
             "media_fit": "contain",
             "media_radius": 0,
-            "extend_media": false,
-            "zoom": true,
+            "extend_media": true,
+            "zoom": false,
             "video_loop": false,
             "hide_variants": true,
             "padding-block-start": 0,
@@ -116,6 +118,7 @@
                 "border_opacity": 100,
                 "border_color": "",
                 "border_radius": 0,
+                "link": "",
                 "open_in_new_tab": false,
                 "placeholder": "",
                 "padding-block-start": 0,
@@ -195,7 +198,7 @@
               "type": "variant-picker",
               "settings": {
                 "variant_style": "buttons",
-                "show_swatches": false,
+                "show_swatches": true,
                 "option_label_text_color": "",
                 "variant_style_class": "default",
                 "custom_variant_background": "{{ settings.color_palette.background }}",
@@ -278,7 +281,7 @@
               "name": "t:names.product_description",
               "settings": {
                 "text": "{{ closest.product.description }}",
-                "width": "100%",
+                "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
                 "type_preset": "rte",
@@ -315,7 +318,7 @@
       "settings": {
         "content_width": "content-center-aligned",
         "desktop_media_position": "left",
-        "equal_columns": false,
+        "equal_columns": true,
         "limit_details_width": false,
         "gap": 48,
         "enable_sticky_add_to_cart": true,
@@ -465,10 +468,68 @@
         "padding-block-start": 48,
         "padding-block-end": 48
       }
+    },
+    "product_tabs_9RELWE": {
+      "type": "product-tabs",
+      "blocks": {
+        "tab_9izTKg": {
+          "type": "tab",
+          "settings": {
+            "title": "Fabric & Wash Care",
+            "source": "metafield",
+            "richtext": "",
+            "namespace": "custom",
+            "key": "care",
+            "page": ""
+          }
+        },
+        "tab_RUdBWr": {
+          "type": "tab",
+          "settings": {
+            "title": "Description",
+            "source": "metafield",
+            "richtext": "",
+            "namespace": "custom",
+            "key": "description",
+            "page": ""
+          }
+        },
+        "tab_WaeJFQ": {
+          "type": "tab",
+          "settings": {
+            "title": "Specifications",
+            "source": "metafield",
+            "richtext": "",
+            "namespace": "custom",
+            "key": "specification",
+            "page": ""
+          }
+        },
+        "tab_t7GRzq": {
+          "type": "tab",
+          "settings": {
+            "title": "Shipping",
+            "source": "metafield",
+            "richtext": "",
+            "namespace": "custom",
+            "key": "shipping",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "tab_9izTKg",
+        "tab_RUdBWr",
+        "tab_WaeJFQ",
+        "tab_t7GRzq"
+      ],
+      "name": "Product tabs",
+      "settings": {}
     }
   },
   "order": [
     "main",
-    "product_recommendations_qggXJq"
+    "product_recommendations_qggXJq",
+    "product_tabs_9RELWE"
   ]
 }
