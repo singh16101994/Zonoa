@@ -472,6 +472,17 @@
     "product_tabs_9RELWE": {
       "type": "product-tabs",
       "blocks": {
+        "tab_9izTKg": {
+          "type": "tab",
+          "settings": {
+            "title": "Fabric & Wash Care",
+            "source": "metafield",
+            "richtext": "",
+            "namespace": "custom",
+            "key": "care",
+            "page": ""
+          }
+        },
         "tab_RUdBWr": {
           "type": "tab",
           "settings": {
@@ -507,6 +518,7 @@
         }
       },
       "block_order": [
+        "tab_9izTKg",
         "tab_RUdBWr",
         "tab_WaeJFQ",
         "tab_t7GRzq"
