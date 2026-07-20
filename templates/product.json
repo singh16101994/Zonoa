@@ -476,7 +476,7 @@
           "type": "tab",
           "settings": {
             "title": "Description",
-            "source": "description",
+            "source": "metafield",
             "richtext": "",
             "namespace": "custom",
             "key": "specifications",
@@ -498,7 +498,7 @@
           "type": "tab",
           "settings": {
             "title": "Shipping",
-            "source": "richtext",
+            "source": "metafield",
             "richtext": "",
             "namespace": "custom",
             "key": "specifications",
