@@ -37,7 +37,7 @@
           "settings": {
             "media_presentation": "grid",
             "media_columns": "two",
-            "image_gap": 4,
+            "image_gap": 2,
             "large_first_image": false,
             "icons_style": "arrow",
             "slideshow_controls_style": "thumbnails",
