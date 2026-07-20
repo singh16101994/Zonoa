@@ -475,7 +475,7 @@
         "tab_RUdBWr": {
           "type": "tab",
           "settings": {
-            "title": "Description",
+            "title": "Product Description",
             "source": "metafield",
             "richtext": "",
             "namespace": "custom",
@@ -494,17 +494,6 @@
             "page": ""
           }
         },
-        "tab_WaeJFQ": {
-          "type": "tab",
-          "settings": {
-            "title": "Specifications",
-            "source": "metafield",
-            "richtext": "",
-            "namespace": "custom",
-            "key": "specification",
-            "page": ""
-          }
-        },
         "tab_t7GRzq": {
           "type": "tab",
           "settings": {
@@ -515,13 +504,24 @@
             "key": "shipping",
             "page": ""
           }
+        },
+        "tab_qxPx8p": {
+          "type": "tab",
+          "settings": {
+            "title": "Return & Exchange",
+            "source": "description",
+            "richtext": "",
+            "namespace": "custom",
+            "key": "return_and_exchange",
+            "page": ""
+          }
         }
       },
       "block_order": [
         "tab_RUdBWr",
         "tab_9izTKg",
-        "tab_WaeJFQ",
-        "tab_t7GRzq"
+        "tab_t7GRzq",
+        "tab_qxPx8p"
       ],
       "name": "Product tabs",
       "settings": {}
