@@ -468,10 +468,56 @@
         "padding-block-start": 48,
         "padding-block-end": 48
       }
+    },
+    "product_tabs_9RELWE": {
+      "type": "product-tabs",
+      "blocks": {
+        "tab_RUdBWr": {
+          "type": "tab",
+          "settings": {
+            "title": "Description",
+            "source": "description",
+            "richtext": "",
+            "namespace": "custom",
+            "key": "specifications",
+            "page": ""
+          }
+        },
+        "tab_WaeJFQ": {
+          "type": "tab",
+          "settings": {
+            "title": "Specifications",
+            "source": "metafield",
+            "richtext": "",
+            "namespace": "custom",
+            "key": "specifications",
+            "page": ""
+          }
+        },
+        "tab_t7GRzq": {
+          "type": "tab",
+          "settings": {
+            "title": "Shipping",
+            "source": "richtext",
+            "richtext": "",
+            "namespace": "custom",
+            "key": "specifications",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "tab_RUdBWr",
+        "tab_WaeJFQ",
+        "tab_t7GRzq"
+      ],
+      "name": "Product tabs",
+      "settings": {}
     }
   },
   "order": [
     "main",
-    "product_recommendations_qggXJq"
+    "product_recommendations_qggXJq",
+    "product_tabs_9RELWE"
   ]
 }
