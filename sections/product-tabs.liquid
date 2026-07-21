@@ -1,0 +1,126 @@
+
+{% comment %}
+Dynamic Product Tabs - Horizon Compatible
+Add as section and include on product template.
+{% endcomment %}
+
+{% if product %}
+<div class="ptabs" id="ptabs-{{ section.id }}">
+  <div class="ptabs__nav">
+    {% for block in section.blocks %}
+      <button class="ptabs__btn{% if forloop.first %} is-active{% endif %}"
+              type="button"
+              data-tab="tab-{{ block.id }}"
+              {{ block.shopify_attributes }}>
+        {{ block.settings.title }}
+      </button>
+    {% endfor %}
+  </div>
+
+  <div class="ptabs__content">
+    {% for block in section.blocks %}
+      <div id="tab-{{ block.id }}" class="ptabs__panel{% if forloop.first %} is-active{% endif %}">
+        {% case block.settings.source %}
+          {% when 'description' %}
+            {{ product.description }}
+
+          {% when 'richtext' %}
+            {{ block.settings.richtext }}
+
+          {% when 'page' %}
+            {% if block.settings.page != blank %}
+              {{ pages[block.settings.page].content }}
+            {% endif %}
+
+          {% when 'metafield' %}
+            {% assign ns = block.settings.namespace %}
+            {% assign key = block.settings.key %}
+            {% if product.metafields[ns][key] != blank %}
+              {{ product.metafields[ns][key] | metafield_tag }}
+            {% else %}
+              <p>No metafield content found.</p>
+            {% endif %}
+        {% endcase %}
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+<style>
+.ptabs {
+    width: 60%;
+    padding: 25px 50px;
+}
+.ptabs__content {
+    padding: 7px 15px;
+}
+.ptabs__nav{display:flex;gap:8px;flex-wrap:wrap;border-bottom:1px solid #ddd}
+.ptabs__btn{background:none;border:0;padding:14px 18px;cursor:pointer;font:inherit}
+.ptabs__btn.is-active{border-bottom:2px solid #111;font-weight:600}
+.ptabs__panel{display:none;padding:24px 0}
+.ptabs__panel.is-active{display:block}
+@media(max-width:749px){
+ .ptabs__nav{overflow:auto;white-space:nowrap}
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded',()=>{
+ document.querySelectorAll('.ptabs').forEach(wrap=>{
+   const btns=wrap.querySelectorAll('.ptabs__btn');
+   const panels=wrap.querySelectorAll('.ptabs__panel');
+   btns.forEach(btn=>{
+     btn.addEventListener('click',()=>{
+       btns.forEach(b=>b.classList.remove('is-active'));
+       panels.forEach(p=>p.classList.remove('is-active'));
+       btn.classList.add('is-active');
+       wrap.querySelector('#'+btn.dataset.tab).classList.add('is-active');
+     });
+   });
+ });
+});
+</script>
+{% endif %}
+
+{% schema %}
+{
+  "name":"Product tabs",
+  "templates":["product"],
+  "settings":[],
+  "blocks":[
+    {
+      "type":"tab",
+      "name":"Tab",
+      "settings":[
+        {"type":"text","id":"title","label":"Tab title","default":"Description"},
+        {
+          "type":"select",
+          "id":"source",
+          "label":"Content source",
+          "default":"description",
+          "options":[
+            {"value":"description","label":"Product description"},
+            {"value":"richtext","label":"Rich text"},
+            {"value":"metafield","label":"Product metafield"},
+            {"value":"page","label":"Shopify page"}
+          ]
+        },
+        {"type":"richtext","id":"richtext","label":"Rich text"},
+        {"type":"text","id":"namespace","label":"Metafield namespace","default":"custom"},
+        {"type":"text","id":"key","label":"Metafield key","default":"specifications"},
+        {"type":"page","id":"page","label":"Page"}
+      ]
+    }
+  ],
+  "presets":[
+    {
+      "name":"Product tabs",
+      "blocks":[
+        {"type":"tab","settings":{"title":"Description","source":"description"}},
+        {"type":"tab","settings":{"title":"Specifications","source":"metafield","namespace":"custom","key":"specifications"}},
+        {"type":"tab","settings":{"title":"Shipping","source":"richtext"}}
+      ]
+    }
+  ]
+}
+{% endschema %}
